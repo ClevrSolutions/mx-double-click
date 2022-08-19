@@ -11,6 +11,10 @@
                 <caption>Doubleclick action</caption>
                 <description>Action to trigger when content is doubleclicked</description>
             </property>
+            <property key="allowConcurrent" type="boolean" defaultValue="true">
+                <caption>Concurrent execution</caption>
+                <description>Whether or the allow concurrent execution of the doubleclick action</description>
+            </property>
             <property key="showPointer" type="boolean" defaultValue="false" required="true">
                 <caption>Show pointer</caption>
                 <description>Show mousepointer on hover</description>

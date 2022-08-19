@@ -11,7 +11,8 @@ export default class DoubleClick extends Component {
     }
 
     onDoubleClick() {
-        if (this.props.dblClickAction && this.props.dblClickAction.canExecute) {
+        if (this.props.dblClickAction && this.props.dblClickAction.canExecute && 
+                (this.props.allowConcurrent || !this.props.dblClickAction.isExecuting)) {
             this.props.dblClickAction.execute();
         }
     }
